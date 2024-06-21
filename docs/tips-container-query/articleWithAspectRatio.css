@@ -1,0 +1,42 @@
+.articleWithKeepAspectRatio {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(16px, 2.5cqi, 24px);
+  padding: clamp(24px, 4.1666666667cqi, 4.1666666667cqi);
+  font-size: clamp(0.875rem, 1.6666666667cqi, 1.6666666667cqi);
+  background: #FFF;
+  border-radius: 16px;
+}
+@container (width <= 640px) {
+  .articleWithKeepAspectRatio {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+.articleWithKeepAspectRatio_wrapper {
+  container-type: inline-size;
+}
+.articleWithKeepAspectRatio_side {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: clamp(16px, 1.6666666667cqi, 1.6666666667cqi);
+  place-content: flex-start;
+  place-items: center;
+  width: clamp(180px, 21.875cqi, 21.875cqi);
+}
+.articleWithKeepAspectRatio_badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  color: #fff;
+  background: #7C71F6;
+  border-radius: 8px;
+  font-size: clamp(0.75rem, 1.4583333333cqi, 1.4583333333cqi);
+}
+.articleWithKeepAspectRatio_title {
+  display: block;
+  font-size: clamp(1rem, 1.875cqi, 1.875cqi);
+  line-height: 1.5;
+}

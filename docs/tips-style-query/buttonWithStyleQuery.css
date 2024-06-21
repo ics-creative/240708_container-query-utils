@@ -1,0 +1,37 @@
+.buttonSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  place-content: center;
+  width: 100%;
+}
+.buttonSection_item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttonWithStyleQuery {
+  width: 100%;
+  max-width: 160px;
+  padding: 12px 24px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #3223B3;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #EBE9FC;
+  border-radius: 24px;
+}
+@container style(--secondary: true) {
+  .buttonWithStyleQuery {
+    color: #fff;
+    background-color: #3223B3;
+  }
+}
+.buttonWithStyleQuery_wrapper {
+  container-type: inline-size;
+}
+.buttonWithStyleQuery_item {
+  display: block;
+}

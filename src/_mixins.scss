@@ -1,0 +1,65 @@
+@mixin title {
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+@mixin badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  color: #fff;
+  background: #7C71F6;
+  border-radius: 8px;
+}
+
+@mixin article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  color: #404040;
+  border-radius: 8px;
+
+  &_wrapper {
+    container-type: inline-size;
+  }
+
+  &_side {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+    place-content: flex-start;
+    place-items: center;
+    width: 204px;
+  }
+
+  &_timestamp {
+    font-size: 1rem;
+  }
+
+  &_badge {
+    @include badge;
+
+    font-size: 0.875rem;
+  }
+
+  &_title {
+    @include title;
+
+    font-size: 1.125rem;
+  }
+}
+
+@mixin splitLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 54px;
+  background: #FFF;
+  border-radius: 16px;
+
+  &_wrapper {
+    container-type: inline-size;
+  }
+}

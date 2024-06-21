@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コンテナークエリーの作例</title>
+  <link rel="stylesheet" href="../common/common.css">
+  <link rel="stylesheet" href="./articleWithContainerQuery.css">
+</head>
+<body>
+  <p class="heading">コンテナークエリー：横並びのパーツ</p>
+  <div class="container js-container">
+    <label class="range">
+      <span>
+        コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
+      </span>
+      <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
+    </label>
+
+    <div class="container_main js-container-main">
+      <div class="oneColumnLayout">
+        <ul class="articleUnit">
+          <li class="article_wrapper">
+            <div class="article">
+              <div class="article_side">
+                <time class="article_timestamp" datetime="2024-01-01">2024/01/01</time>
+                <span class="article_badge">カテゴリ名</span>
+              </div>
+              <div class="article_main">
+                <a href="#" class="article_title">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="article_wrapper">
+            <div class="article">
+              <div class="article_side">
+                <time class="article_timestamp" datetime="2024-01-01">2024/01/01</time>
+                <span class="article_badge">カテゴリ名</span>
+              </div>
+              <div class="article_main">
+                <a href="#" class="article_title">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="article_wrapper">
+            <div class="article">
+              <div class="article_side">
+                <time class="article_timestamp" datetime="2024-01-01">2024/01/01</time>
+                <span class="article_badge">カテゴリ名</span>
+              </div>
+              <div class="article_main">
+                <a href="#" class="article_title">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p class="heading" id="change-layout">コンテナークエリー：2カラムのレイアウトに配置</p>
+  <div class="container js-container">
+    <label class="range">
+      <span>
+        コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
+      </span>
+      <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
+    </label>
+
+    <div class="container_main js-container-main">
+      <div class="splitLayout_wrapper">
+        <div class="splitLayout">
+          <div class="sectionTitle">
+            <p class="sectionTitle_item">ニュース</p>
+          </div>
+          <ul class="articleUnit">
+            <li class="article_wrapper">
+              <div class="article">
+                <div class="article_side">
+                  <span class="article_timestamp">2024/01/01</span>
+                  <span class="article_badge">カテゴリ名</span>
+                </div>
+                <div class="article_main">
+                  <a href="#" class="article_title">
+                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="article_wrapper">
+              <div class="article">
+                <div class="article_side">
+                  <span class="article_timestamp">2024/01/01</span>
+                  <span class="article_badge">カテゴリ名</span>
+                </div>
+                <div class="article_main">
+                  <a href="#" class="article_title">
+                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="article_wrapper">
+              <div class="article">
+                <div class="article_side">
+                  <span class="article_timestamp">2024/01/01</span>
+                  <span class="article_badge">カテゴリ名</span>
+                </div>
+                <div class="article_main">
+                  <a href="#" class="article_title">
+                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../common/common.js"></script>
+</body>
+</html>
