@@ -4,11 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スタイルクエリーの作例</title>
-  <link rel="stylesheet" href="../common/common.css">
-  <link rel="stylesheet" href="./articleWithStyleQuery.css">
-  <link rel="stylesheet" href="./buttonWithStyleQuery.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="articleWithAspectRatio.css">
+  <link rel="stylesheet" href="articleWithStyleQuery.css">
+  <link rel="stylesheet" href="buttonWithStyleQuery.css">
+
+  <script src="common.js" defer></script>
 </head>
 <body>
+  <p class="heading">コンテナークエリー：文字サイズや余白を可変にする</p>
+  <div class="container js-container">
+    <label class="range">
+        <span>
+          コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
+        </span>
+      <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
+    </label>
+
+    <div class="container_main js-container-main">
+      <div class="articleWithKeepAspectRatio_wrapper">
+        <div class="articleWithKeepAspectRatio">
+          <div class="articleWithKeepAspectRatio_side">
+            <span class="articleWithKeepAspectRatio_timestamp">2024/01/01</span>
+            <span class="articleWithKeepAspectRatio_badge">カテゴリ名</span>
+          </div>
+          <div class="articleWithKeepAspectRatio_main">
+            <a href="#" class="articleWithKeepAspectRatio_title">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <p class="heading">スタイルクエリー：CSS変数を条件にスタイルを調整</p>
   <div class="container">
     <div class="oneColumnLayout">
@@ -54,7 +83,5 @@
       </div>
     </div>
   </div>
-
-  <script src="../common/common.js"></script>
 </body>
 </html>
