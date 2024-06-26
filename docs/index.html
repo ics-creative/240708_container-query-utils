@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>スタイルクエリーの作例</title>
+  <title>コンテナークエリーの関連機能</title>
   <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="articleWithAspectRatio.css">
-  <link rel="stylesheet" href="articleWithStyleQuery.css">
-  <link rel="stylesheet" href="buttonWithStyleQuery.css">
+  <link rel="stylesheet" href="article.css">
+  <link rel="stylesheet" href="button.css">
 
   <script src="common.js" defer></script>
 </head>
 <body>
-  <p class="heading">コンテナークエリー：文字サイズや余白を可変にする</p>
+  <p class="heading">要素の幅の単位：余白や文字サイズを拡縮する</p>
   <div class="container js-container">
     <label class="range">
         <span>
@@ -22,14 +21,14 @@
     </label>
 
     <div class="container_main js-container-main">
-      <div class="articleWithKeepAspectRatio_wrapper">
-        <div class="articleWithKeepAspectRatio">
-          <div class="articleWithKeepAspectRatio_side">
-            <span class="articleWithKeepAspectRatio_timestamp">2024/01/01</span>
-            <span class="articleWithKeepAspectRatio_badge">カテゴリ名</span>
+      <div class="article_wrapper">
+        <div class="article">
+          <div class="article_side">
+            <span class="article_timestamp">2024/01/01</span>
+            <span class="article_badge">カテゴリ名</span>
           </div>
-          <div class="articleWithKeepAspectRatio_main">
-            <a href="#" class="articleWithKeepAspectRatio_title">
+          <div class="article_main">
+            <a href="#" class="article_title">
               テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
             </a>
           </div>
@@ -38,48 +37,20 @@
     </div>
   </div>
 
-  <p class="heading">スタイルクエリー：CSS変数を条件にスタイルを調整</p>
+  <p class="heading" id="style-query">スタイルクエリー：CSS変数を条件にスタイルを適用</p>
   <div class="container">
     <div class="oneColumnLayout">
       <div class="buttonSection">
         <div class="buttonSection_item">
-          <button class="buttonWithStyleQuery">
+          <button class="button">
             <span>.button</span>
           </button>
         </div>
         <div class="buttonSection_item" style="--secondary: true">
-          <button class="buttonWithStyleQuery">
+          <button class="button">
             <span>.button</span>
           </button>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <p class="heading" id="component-divide">スタイルクエリー：共通のパーツの再利用性を保つ</p>
-  <div class="container js-container">
-    <label class="range">
-      <span>
-        コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
-      </span>
-      <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
-    </label>
-
-    <div class="container_main js-container-main">
-      <div class="oneColumnLayout">
-        <ul>
-          <li class="articleWithStyleQuery_wrapper">
-            <div class="articleWithStyleQuery">
-              <div class="articleWithStyleQuery_side">
-                <span class="timestamp">2024/01/01</span>
-                <span class="badge">カテゴリ名</span>
-              </div>
-              <div class="articleWithStyleQuery_main">
-                <a href="#" class="title">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

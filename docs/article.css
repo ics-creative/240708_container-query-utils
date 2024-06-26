@@ -1,4 +1,4 @@
-.articleWithKeepAspectRatio {
+.article {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: clamp(16px, 2.5cqi, 24px);
@@ -8,16 +8,16 @@
   border-radius: 16px;
 }
 @container (width <= 640px) {
-  .articleWithKeepAspectRatio {
+  .article {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     gap: 16px;
   }
 }
-.articleWithKeepAspectRatio_wrapper {
+.article_wrapper {
   container-type: inline-size;
 }
-.articleWithKeepAspectRatio_side {
+.article_side {
   display: grid;
   grid-template-columns: auto auto;
   gap: clamp(16px, 1.6666666667cqi, 1.6666666667cqi);
@@ -25,7 +25,7 @@
   place-items: center;
   width: clamp(180px, 21.875cqi, 21.875cqi);
 }
-.articleWithKeepAspectRatio_badge {
+.article_badge {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@
   border-radius: 8px;
   font-size: clamp(0.75rem, 1.4583333333cqi, 1.4583333333cqi);
 }
-.articleWithKeepAspectRatio_title {
+.article_title {
   display: block;
   font-size: clamp(1rem, 1.875cqi, 1.875cqi);
   line-height: 1.5;

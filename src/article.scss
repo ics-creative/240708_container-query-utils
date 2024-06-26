@@ -1,6 +1,6 @@
 @use "mixins" as mixins;
 
-.articleWithKeepAspectRatio {
+.article {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: clamp(16px, 24 / 960 * 100cqi, 24px);
