@@ -11,7 +11,25 @@
   <script src="common.js" defer></script>
 </head>
 <body>
-  <p class="heading">要素の幅の単位：余白や文字サイズを拡縮する</p>
+  <p class="heading" id="style-query">スタイルクエリー：CSS変数を条件にスタイルを適用</p>
+  <div class="container">
+    <div class="oneColumnLayout">
+      <div class="buttonSection">
+        <div class="buttonSection_item">
+          <button class="button">
+            <span>.button</span>
+          </button>
+        </div>
+        <div class="buttonSection_item" style="--secondary: true">
+          <button class="button">
+            <span>.button</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="heading" id="units">要素の幅の単位：余白や文字サイズを拡縮する</p>
   <div class="container js-container">
     <label class="range">
         <span>
@@ -32,24 +50,6 @@
               テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
             </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <p class="heading" id="style-query">スタイルクエリー：CSS変数を条件にスタイルを適用</p>
-  <div class="container">
-    <div class="oneColumnLayout">
-      <div class="buttonSection">
-        <div class="buttonSection_item">
-          <button class="button">
-            <span>.button</span>
-          </button>
-        </div>
-        <div class="buttonSection_item" style="--secondary: true">
-          <button class="button">
-            <span>.button</span>
-          </button>
         </div>
       </div>
     </div>
