@@ -3,7 +3,7 @@
   grid-template-columns: auto 1fr;
   gap: clamp(16px, 2.5cqi, 24px);
   padding: clamp(24px, 4.1666666667cqi, 4.1666666667cqi);
-  font-size: clamp(0.875rem, 1.6666666667cqi, 1.6666666667cqi);
+  font-size: clamp(0.625rem, 1.6666666667cqi, 1.6666666667cqi);
   background: #FFF;
   border-radius: 16px;
 }
@@ -33,10 +33,10 @@
   color: #fff;
   background: #7C71F6;
   border-radius: 8px;
-  font-size: clamp(0.75rem, 1.4583333333cqi, 1.4583333333cqi);
+  font-size: clamp(0.625rem, 1.4583333333cqi, 1.4583333333cqi);
 }
 .article_title {
   display: block;
-  font-size: clamp(1rem, 1.875cqi, 1.875cqi);
+  font-size: clamp(0.625rem, 2.8125cqi, 2.8125cqi);
   line-height: 1.5;
 }

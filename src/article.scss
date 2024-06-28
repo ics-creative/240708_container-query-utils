@@ -5,7 +5,7 @@
   grid-template-columns: auto 1fr;
   gap: clamp(16px, 24 / 960 * 100cqi, 24px);
   padding: clamp(24px, 40 / 960 * 100cqi, 40 / 960 * 100cqi);
-  font-size: clamp(0.875rem, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
+  font-size: clamp(0.625rem, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
   background: #FFF;
   border-radius: 16px;
 
@@ -31,12 +31,12 @@
   &_badge {
     @include mixins.badge;
 
-    font-size: clamp(0.75rem, 14 / 960 * 100cqi, 14 / 960 * 100cqi);
+    font-size: clamp(0.625rem, 14 / 960 * 100cqi, 14 / 960 * 100cqi);
   }
 
   &_title {
     display: block;
-    font-size: clamp(1rem, 18 / 960 * 100cqi, 18 / 960 * 100cqi);
+    font-size: clamp(0.625rem, 18 / 640 * 100cqi, 18 / 640 * 100cqi);
     line-height: 1.5;
   }
 }
