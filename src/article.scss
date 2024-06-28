@@ -3,9 +3,9 @@
 .article {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: clamp(16px, 24 / 960 * 100cqi, 24px);
-  padding: clamp(24px, 40 / 960 * 100cqi, 40 / 960 * 100cqi);
-  font-size: clamp(0.625rem, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
+  gap: clamp(16px, 24 / 960 * 100cqw, 24px);
+  padding: clamp(24px, 40 / 960 * 100cqw, 40 / 960 * 100cqw);
+  font-size: clamp(0.625rem, 16 / 960 * 100cqw, 16 / 960 * 100cqw);
   background: #FFF;
   border-radius: 16px;
 
@@ -22,21 +22,21 @@
   &_side {
     display: grid;
     grid-template-columns: auto auto;
-    gap: clamp(16px, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
+    gap: clamp(16px, 16 / 960 * 100cqw, 16 / 960 * 100cqw);
     place-content: flex-start;
     place-items: center;
-    width: clamp(180px, 210 / 960 * 100cqi, 210 / 960 * 100cqi);
+    width: clamp(180px, 210 / 960 * 100cqw, 210 / 960 * 100cqw);
   }
 
   &_badge {
     @include mixins.badge;
 
-    font-size: clamp(0.625rem, 14 / 960 * 100cqi, 14 / 960 * 100cqi);
+    font-size: clamp(0.625rem, 14 / 960 * 100cqw, 14 / 960 * 100cqw);
   }
 
   &_title {
     display: block;
-    font-size: clamp(0.625rem, 18 / 640 * 100cqi, 18 / 640 * 100cqi);
+    font-size: clamp(0.625rem, 18 / 640 * 100cqw, 18 / 640 * 100cqw);
     line-height: 1.5;
   }
 }
