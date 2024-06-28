@@ -58,6 +58,10 @@ button {
     max-width: var(--value);
     margin: 0 auto;
   }
+
+  &__gap-small {
+    gap: 16px;
+  }
 }
 
 .sectionTitle {

@@ -12,19 +12,15 @@
 </head>
 <body>
   <p class="heading" id="style-query">スタイルクエリー：CSS変数を条件にスタイルを適用</p>
-  <div class="container">
+  <div class="container container__gap-small">
     <div class="oneColumnLayout">
       <div class="buttonSection">
-        <div class="buttonSection_item">
-          <button class="button">
-            <span>.button</span>
-          </button>
-        </div>
-        <div class="buttonSection_item" style="--secondary: true">
-          <button class="button">
-            <span>.button</span>
-          </button>
-        </div>
+        <button class="button">ボタン</button>
+      </div>
+    </div>
+    <div class="oneColumnLayout">
+      <div class="buttonSection" style="--secondary: true">
+        <button class="button">ボタン</button>
       </div>
     </div>
   </div>
@@ -32,9 +28,9 @@
   <p class="heading" id="units">要素の幅の単位：余白や文字サイズを拡縮する</p>
   <div class="container js-container">
     <label class="range">
-        <span>
-          コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
-        </span>
+      <span>
+        コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
+      </span>
       <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
     </label>
 

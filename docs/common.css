@@ -58,6 +58,9 @@ button {
   max-width: var(--value);
   margin: 0 auto;
 }
+.container__gap-small {
+  gap: 16px;
+}
 
 .sectionTitle_item {
   margin-top: -4px;
