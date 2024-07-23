@@ -4,14 +4,12 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "fix": "stylelint \"**/*.scss\" --fix",
-    "build:sass": "sass --no-source-map src:docs"
+    "fix": "stylelint \"**/*.css\" --fix"
   },
   "devDependencies": {
     "stylelint-config-standard": "36.0.0"
   },
   "dependencies": {
-    "sass": "1.77.5",
     "stylelint": "16.6.1",
     "stylelint-config-recess-order": "5.0.1"
   }
