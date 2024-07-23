@@ -1,7 +1,7 @@
 {
-  "name": "vite-project",
+  "name": "240723_container-query-utils",
   "private": true,
-  "version": "0.0.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "fix": "stylelint \"**/*.scss\" --fix",
